@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 500vh;
+}
+
+.wrapper {
+  height: 200vh;
+  background: silver;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.sticky-box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: sticky;
+  top: 0;
+}
+
+.bg-green {
+  background: green;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-row {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.bg-wrap {
+  width: 100px;
+    }
+
+.wrap-yellow {
+  height: 50vh;
+  position: fixed;
+  top: 10px;
+}
+
+.wrap-red {
+  height: 100vh;
+}
+
+.wrap-green {
+  height: 1000vh;
+}
