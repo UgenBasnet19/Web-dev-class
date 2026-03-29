@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id = "boss">Dilraj Bista</div>
+    <script>
+        constboss=document.getElementById("boss");
+        boss.innerText="Ram Bahadur";
+        window.addEventListener('DOMContentLoaded', () => {
+
+        })
+        console.log(boss);
+    </script>
+
+    <div class = "box">Box 1</div>
+    <div class = "box">Box 2</div>
+    <script>
+        const boxes=document.getElementsByClassName("box");
+        for(let i=0; i<boxes.length; i++){
+            if(i==0){
+                boxes[i].innerText="This is box 1";
+            }
+        }
+    </script>
+
+    <script>
+        <div class = "wrapper">
+            <div class = "okay">Item 1</div>
+        </div>
+        const wrappers=document.querySelectorAll(".wrapper.okay");
+        wrappers.forEach(wrapper => {
+            if(index == wrapper.length-1){
+                wrapper.innerText="This is the last item";
+            }
+        });
+    </script> 
+</body>
+</html>
