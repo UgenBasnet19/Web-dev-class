@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <script>
+        let day = ['Sunday', 'Monday']
+        day.push('Tuesday')
+        day.shift('Sunday')
+        console.log(day)
+    </script>
+
+    <script>
+        let animals = ['cow', 'goat']
+        animals.splice(1, 0, 'Horse', 'Camel')
+        console.log(animals)
+        let cattle = ['cow', 'goat', 'buffalo']
+        cattle.splice(1, 1, 'Horse', 'Camel')
+        console.log(cattle)
+
+        let arr1 = ['horse', 'cow', 'donkey']
+        let arr2 = ['zebra', 'tiger']
+        let arr3 = arr1.concat(arr2)
+        console.log(arr3)
+
+        arr1.forEach(arr => {
+            console.log(arr)
+        })
+    </script>
+
+    <script>
+        let num = [1, 2, 3, 4, 5];
+        function bonus(num)
+        {
+            let bonus = []
+            for(let i=0; i<num.length; i++)
+            {
+                bonus.push(num[i] + 5)
+            }
+            console.log(bonus)
+        }
+
+        function bonus2(num)
+        {
+            let bonus2 = []
+            for(let i=0; i<num.length; i++)
+            {
+                if(num[i] % 2 == 0)
+                {
+                    bonus2.push(num[i] + 3)
+                }
+                else
+                {
+                    bonus2.push(num[i] + 7)
+                }
+            }
+            console.log(bonus2)
+        }
+    </script>
+</body>
+</html>
